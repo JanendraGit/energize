@@ -13,6 +13,7 @@ import java.util.Optional;
 @RequestMapping("/api/skillPlans")
 public class SkillPlanController {
 
+
     private final SkillPlanRepository skillPlanRepository;
 
     @Autowired
