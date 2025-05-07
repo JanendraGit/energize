@@ -1,6 +1,6 @@
 package com.paf.energize.config;
 
-import com.example.pafbackend.services.CustomOAuth2UserService;
+import com.paf.energize.service.impl.CustomOAuth2UserService;
 import com.nimbusds.jose.jwk.JWK;
 import com.nimbusds.jose.jwk.JWKSet;
 import com.nimbusds.jose.jwk.RSAKey;

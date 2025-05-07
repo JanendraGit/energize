@@ -1,7 +1,7 @@
 package com.paf.energize.controller;
 
-import com.example.pafbackend.models.Notification;
-import com.example.pafbackend.repositories.NotificationRepository;
+import com.paf.energize.model.Notification;
+import com.paf.energize.repository.NotificationRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -13,7 +13,8 @@ import java.util.List;
 @RequestMapping("/api/notifications")
 public class NotificationController {
 
-    private final NotificationRepository notificationRepository;
+    @Autowired
+    private NotificationRepository notificationRepository;
 
     @Autowired
     public NotificationController(NotificationRepository notificationRepository) {

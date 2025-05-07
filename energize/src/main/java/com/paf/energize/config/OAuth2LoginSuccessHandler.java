@@ -1,8 +1,8 @@
 package com.paf.energize.config;
 
-import com.example.pafbackend.dto.TokenDTO;
-import com.example.pafbackend.models.User;
-import com.example.pafbackend.services.CustomOAuth2User;
+import com.paf.energize.dto.TokenDTO;
+import com.paf.energize.model.User;
+import com.paf.energize.service.impl.CustomOAuth2User;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletRequest;

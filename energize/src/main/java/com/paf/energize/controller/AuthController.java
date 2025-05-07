@@ -1,11 +1,12 @@
 package com.paf.energize.controller;
 
-import com.example.pafbackend.config.TokenGenerator;
-import com.example.pafbackend.dto.LoginDTO;
-import com.example.pafbackend.dto.SignupDTO;
-import com.example.pafbackend.dto.TokenDTO;
-import com.example.pafbackend.models.User;
-import com.example.pafbackend.services.CustomOAuth2User;
+import com.paf.energize.config.TokenGenerator;
+import com.paf.energize.dto.LoginDTO;
+import com.paf.energize.dto.SignupDTO;
+import com.paf.energize.dto.TokenDTO;
+import com.paf.energize.model.User;
+import com.paf.energize.service.impl.CustomOAuth2User;
+import com.paf.energize.service.impl.CustomOAuth2UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,7 +1,7 @@
 package com.paf.energize.config;
 
-import com.example.pafbackend.dto.TokenDTO;
-import com.example.pafbackend.models.User;
+import com.paf.energize.dto.TokenDTO;
+import com.paf.energize.model.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
