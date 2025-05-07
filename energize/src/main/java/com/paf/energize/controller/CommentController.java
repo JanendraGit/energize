@@ -26,7 +26,6 @@ public class CommentController {
     @GetMapping
     public List<Comment> getAllComments() {
         List<Comment> comments = commentRepository.findAll();
-
         return comments;
     }
 
@@ -42,13 +41,10 @@ public class CommentController {
     public ResponseEntity<Comment> updateComment(@PathVariable String id, @RequestBody Comment commentDetails) {
         return commentRepository.findById(id).map(comment -> {
             comment.setCommentText(commentDetails.getCommentText());
-            // Presuming 'text' is a field within your Comment entity.
-            // Add other fields as necessary.
             return ResponseEntity.ok(commentRepository.save(comment));
         }).orElseGet(() -> ResponseEntity.notFound().build());
     }
 
-    // DELETE: Delete a Comment by ID
     @DeleteMapping("/{id}")
     public ResponseEntity<?> deleteComment(@PathVariable String id) {
         return commentRepository.findById(id).map(comment -> {
