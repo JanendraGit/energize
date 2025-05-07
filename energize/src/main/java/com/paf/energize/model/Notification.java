@@ -11,6 +11,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Notification {
     @Id
     private String id;
+
     private String userId;
     private String message;
     private String description;
