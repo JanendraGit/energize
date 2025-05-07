@@ -40,8 +40,8 @@ public class CommentController {
     @PutMapping("/{id}")
     public ResponseEntity<Comment> updateComment(@PathVariable String id, @RequestBody Comment commentDetails) {
         return commentRepository.findById(id).map(comment -> {
-            comment.setCommentText(commentDetails.getCommentText());
-            return ResponseEntity.ok(commentRepository.save(comment));
+//            comment.setCommentText(commentDetails.getCommentText());
+//            return ResponseEntity.ok(commentRepository.save(comment));
         }).orElseGet(() -> ResponseEntity.notFound().build());
     }
 
