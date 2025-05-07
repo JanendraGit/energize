@@ -1,9 +1,9 @@
 package com.paf.energize.service.impl;
 
-import com.example.pafbackend.models.User;
-import com.example.pafbackend.models.UserProfile;
-import com.example.pafbackend.repositories.UserProfileRepository;
-import com.example.pafbackend.repositories.UserRepository;
+import com.paf.energize.model.User;
+import com.paf.energize.model.UserProfile;
+import com.paf.energize.repository.UserProfileRepository;
+import com.paf.energize.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.oauth2.client.userinfo.DefaultOAuth2UserService;
 import org.springframework.security.oauth2.client.userinfo.OAuth2UserRequest;

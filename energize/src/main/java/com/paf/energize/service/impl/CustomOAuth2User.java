@@ -1,6 +1,6 @@
 package com.paf.energize.service.impl;
 
-import com.example.pafbackend.models.User;
+import com.paf.energize.model.User;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.oauth2.core.user.OAuth2User;
 
