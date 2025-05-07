@@ -1,7 +1,7 @@
 package com.paf.energize.controller;
 
-import com.example.pafbackend.models.User;
-import com.example.pafbackend.repositories.UserRepository;
+import com.paf.energize.model.User;
+import com.paf.energize.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

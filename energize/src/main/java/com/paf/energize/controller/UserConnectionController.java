@@ -1,7 +1,7 @@
 package com.paf.energize.controller;
 
-import com.example.pafbackend.models.UserConnection;
-import com.example.pafbackend.repositories.UserConnectionRepository;
+import com.paf.energize.model.UserConnection;
+import com.paf.energize.repository.UserConnectionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
