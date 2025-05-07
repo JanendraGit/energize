@@ -1,7 +1,7 @@
 package com.paf.energize.repository;
 
 
-import com.example.pafbackend.models.UserProfile;
+import com.paf.energize.model.UserProfile;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
