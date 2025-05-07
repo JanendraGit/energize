@@ -23,7 +23,6 @@ public class CommentController {
         return commentRepository.save(comment);
     }
 
-    // GET: Retrieve all Comments with User details populated
     @GetMapping
     public List<Comment> getAllComments() {
         List<Comment> comments = commentRepository.findAll();
@@ -31,7 +30,6 @@ public class CommentController {
         return comments;
     }
 
-    // GET: Retrieve a Comment by ID with User details populated
     @GetMapping("/{id}")
     public ResponseEntity<Comment> getCommentById(@PathVariable String id) {
         Optional<Comment> comment = commentRepository.findById(id);
@@ -40,7 +38,6 @@ public class CommentController {
         }).orElseGet(() -> ResponseEntity.notFound().build());
     }
 
-    // PUT: Update a Comment by ID
     @PutMapping("/{id}")
     public ResponseEntity<Comment> updateComment(@PathVariable String id, @RequestBody Comment commentDetails) {
         return commentRepository.findById(id).map(comment -> {
