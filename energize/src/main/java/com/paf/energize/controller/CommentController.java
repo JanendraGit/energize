@@ -15,8 +15,8 @@ public class CommentController {
     @Autowired
     private CommentRepository commentRepository;
 
-    @Autowired
-    private UserRepository userRepository;
+//    @Autowired
+//    private UserRepository userRepository;
 
     @PostMapping
     public Comment createComment(@RequestBody Comment comment) {
