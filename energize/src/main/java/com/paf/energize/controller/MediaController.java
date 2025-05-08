@@ -30,4 +30,10 @@ public class MediaController {
         Media savedMedia = mediaRepository.save(media);
         return new ResponseEntity<>(savedMedia, HttpStatus.CREATED);
     }
+
+    @DeleteMapping("/{mediaId}")
+    public ResponseEntity<Void> deleteMedia(@PathVariable String mediaId) {
+        mediaRepository.deleteById(mediaId);
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+    }
 }
