@@ -2,6 +2,7 @@ package com.paf.energize.controller;
 
 import com.paf.energize.model.Comment;
 import com.paf.energize.repository.CommentRepository;
+import com.paf.energize.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -15,8 +16,8 @@ public class CommentController {
     @Autowired
     private CommentRepository commentRepository;
 
-//    @Autowired
-//    private UserRepository userRepository;
+    @Autowired
+    private UserRepository userRepository;
 
     @PostMapping
     public Comment createComment(@RequestBody Comment comment) {
