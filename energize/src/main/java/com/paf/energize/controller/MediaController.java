@@ -5,10 +5,7 @@ import com.paf.energize.repository.MediaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -26,5 +23,11 @@ public class MediaController {
     public ResponseEntity<List<Media>> getMediaByPostId(@PathVariable String postId) {
         List<Media> mediaList = mediaRepository.findByPostId(postId);
         return new ResponseEntity<>(mediaList, HttpStatus.OK);
+    }
+
+    @PostMapping
+    public ResponseEntity<Media> createMedia(@RequestBody Media media) {
+        Media savedMedia = mediaRepository.save(media);
+        return new ResponseEntity<>(savedMedia, HttpStatus.CREATED);
     }
 }
