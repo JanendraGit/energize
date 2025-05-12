@@ -19,10 +19,10 @@ public class CommentController {
     @Autowired
     private UserRepository userRepository;
 
-    @PostMapping
-    public Comment createComment(@RequestBody Comment comment) {
-        return commentRepository.save(comment);
-    }
+   @PostMapping
+   public Comment createComment(@RequestBody Comment comment) {
+       return commentRepository.save(comment);
+   }
 
     @GetMapping
     public List<Comment> getAllComments() {
