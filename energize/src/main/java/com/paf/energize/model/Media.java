@@ -12,6 +12,7 @@ public class Media {
     private String mediaUrl;
     private String description;
 
+
     public String getId() {
         return id;
     }
