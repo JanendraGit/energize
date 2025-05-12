@@ -21,8 +21,7 @@ public class CommentController {
 
    @PostMapping
    public Comment createComment(@RequestBody Comment comment) {
-//
-//        return commentRepository.save(comment);
+       return commentRepository.save(comment);
    }
 //
 //    @GetMapping
