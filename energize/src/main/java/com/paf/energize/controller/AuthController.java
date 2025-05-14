@@ -72,7 +72,6 @@ public class AuthController {
     @PostMapping("/auth/login")
     public ResponseEntity<?> login(@RequestBody LoginDTO loginDTO) {
         try {
-
             logger.info("====== Login method called for " + loginDTO.getUsername());
             Authentication authentication = daoAuthenticationProvider.authenticate(
                     UsernamePasswordAuthenticationToken.unauthenticated(loginDTO.getUsername(), loginDTO.getPassword())
