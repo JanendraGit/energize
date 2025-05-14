@@ -10,6 +10,7 @@ const Notifications = () => {
   const [loading, setLoading] = useState(true);
   const snap = useSnapshot(state);
 
+
   useEffect(() => {
     fetchNotifications();
   }, []);
