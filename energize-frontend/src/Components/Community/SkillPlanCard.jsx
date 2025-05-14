@@ -131,9 +131,7 @@ const SkillPlanCard = ({ plan }) => {
             <CheckCircleOutlined /> Completed
           </div>
         ) : (
-          <div className="skill-plan-pending-tag">
-            <ClockCircleOutlined /> In Progress
-          </div>
+
         )}
       </div>
     </Card>
