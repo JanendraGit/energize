@@ -22,7 +22,7 @@ import java.util.Objects;
 
 @Component
 @Slf4j
-public class KeyUtils {
+public class  KeyUtils {
     @Autowired
     Environment environment;
 
