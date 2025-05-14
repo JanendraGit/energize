@@ -34,7 +34,6 @@ import java.util.Map;
 @RequestMapping("/api")
 public class AuthController {
     private static final Logger logger = LoggerFactory.getLogger(AuthController.class);
-
     
     @Autowired
     UserDetailsManager userDetailsManager;
