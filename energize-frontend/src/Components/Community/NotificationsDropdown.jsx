@@ -30,6 +30,7 @@ const NotificationsDropdown = () => {
         }
     };
 
+
     const notificationMenu = (
         <Menu className="notification-dropdown-menu">
             {loading ? (
