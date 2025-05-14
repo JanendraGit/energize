@@ -30,6 +30,7 @@ public class OAuth2LoginSuccessHandler extends SavedRequestAwareAuthenticationSu
     public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response, Authentication authentication)
             throws ServletException, IOException {
 
+
         TokenDTO tokenDTO = null;
 
         // Check if this is an OAuth2 authentication
