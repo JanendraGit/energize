@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import UserService from "../../Services/UserService";
-import LikeService from "../../Services/LikeService";
+import LikeService from "../../../../../gym-main/frontend/src/Services/LikeService";
 import { useSnapshot } from "valtio";
 import state from "../../Utils/Store";
 import CommentService from "../../Services/CommentService";
