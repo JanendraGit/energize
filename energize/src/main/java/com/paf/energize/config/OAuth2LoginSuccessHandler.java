@@ -42,7 +42,6 @@ public class OAuth2LoginSuccessHandler extends SavedRequestAwareAuthenticationSu
             );
             tokenDTO = tokenGenerator.createToken(userAuthentication);
 
-
             addCookie(response, "access_token", tokenDTO.getAccessToken(), 86400);      // 1 day
             addCookie(response, "refresh_token", tokenDTO.getRefreshToken(), 2592000); // 30 days
             addCookie(response, "user_id", tokenDTO.getUserId(), 2592000);             // 30 days
