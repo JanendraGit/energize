@@ -32,8 +32,6 @@ public class OAuth2LoginSuccessHandler extends SavedRequestAwareAuthenticationSu
 
 
         TokenDTO tokenDTO = null;
-
-        // Check if this is an OAuth2 authentication
         if (authentication instanceof OAuth2AuthenticationToken) {
             OAuth2AuthenticationToken oauthToken = (OAuth2AuthenticationToken) authentication;
             CustomOAuth2User oAuth2User = (CustomOAuth2User) oauthToken.getPrincipal();
