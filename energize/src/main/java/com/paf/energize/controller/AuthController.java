@@ -38,8 +38,10 @@ public class AuthController {
     @Autowired
     UserDetailsManager userDetailsManager;
 
+
     @Autowired
     TokenGenerator tokenGenerator;
+
 
     @Autowired
     DaoAuthenticationProvider daoAuthenticationProvider;
