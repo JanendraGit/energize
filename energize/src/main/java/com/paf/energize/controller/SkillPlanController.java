@@ -54,18 +54,5 @@ public class SkillPlanController {
     }
 
     // ✅ Delete only if owner matches
-    @DeleteMapping("/{skillPlanId}/{userId}")
-    public ResponseEntity<Void> deleteSkillPlan(@PathVariable String skillPlanId, @PathVariable String userId) {
-        Optional<SkillPlan> optionalSkillPlan = skillPlanRepository.findById(skillPlanId);
-        if (optionalSkillPlan.isPresent()) {
-            SkillPlan skillPlan = optionalSkillPlan.get();
-            if (!skillPlan.getUserId().equals(userId)) {
-                return new ResponseEntity<>(HttpStatus.FORBIDDEN);
-            }
-            skillPlanRepository.deleteById(skillPlanId);
-            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
-        } else {
-            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-        }
-    }
+
 }
