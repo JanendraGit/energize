@@ -10,10 +10,10 @@ const NotificationsDropdown = () => {
   const [notifications, setNotifications] = useState([]);
   const [loading, setLoading] = useState(true);
   const snap = useSnapshot(state);
-
   useEffect(() => {
     fetchNotifications();
   }, []);
+
 
   const fetchNotifications = async () => {
     try {
