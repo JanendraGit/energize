@@ -112,7 +112,6 @@ const UploadPostModal = () => {
                         </Upload>
                     </Form.Item>
                 )}
-
             </Form>
             {imageUploading && <p>Please wait media is uploading</p>}
             {fileType === "image" && image && (
