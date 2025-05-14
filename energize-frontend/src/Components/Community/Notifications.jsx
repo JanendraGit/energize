@@ -6,6 +6,7 @@ import state from "../../Utils/Store";
 // import "../Styles/Notifications.css";
 
 const Notifications = () => {
+
   const [notifications, setNotifications] = useState([]);
   const [loading, setLoading] = useState(true);
   const snap = useSnapshot(state);

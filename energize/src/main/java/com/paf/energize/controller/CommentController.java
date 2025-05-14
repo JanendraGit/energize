@@ -32,6 +32,7 @@ public class CommentController {
 
     @GetMapping("/{id}")
     public ResponseEntity<Comment> getCommentById(@PathVariable String id) {
+
         Optional<Comment> comment = commentRepository.findById(id);
         return comment.map(c -> {
             return ResponseEntity.ok(c);
