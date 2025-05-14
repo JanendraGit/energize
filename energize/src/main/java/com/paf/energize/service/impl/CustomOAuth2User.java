@@ -14,6 +14,7 @@ public class CustomOAuth2User implements OAuth2User {
     public CustomOAuth2User(OAuth2User oauth2User, User user) {
         this.oauth2User = oauth2User;
         this.user = user;
+
     }
 
     @Override
