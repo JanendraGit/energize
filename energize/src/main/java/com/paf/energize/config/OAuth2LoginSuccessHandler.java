@@ -37,7 +37,6 @@ public class OAuth2LoginSuccessHandler extends SavedRequestAwareAuthenticationSu
             CustomOAuth2User oAuth2User = (CustomOAuth2User) oauthToken.getPrincipal();
             User user = oAuth2User.getUser();
 
-            // Create a token for this user
             Authentication userAuthentication = UsernamePasswordAuthenticationToken.authenticated(
                     user, "", Collections.emptyList()
             );
