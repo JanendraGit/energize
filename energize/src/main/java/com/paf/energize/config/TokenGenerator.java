@@ -24,7 +24,6 @@ public class TokenGenerator {
     private static final Logger logger = LoggerFactory.getLogger(TokenGenerator.class);
     @Autowired
     JwtEncoder accessTokenEncoder;
-
     @Autowired
     @Qualifier("jwtRefreshTokenEncoder")
     JwtEncoder refreshTokenEncoder;
