@@ -30,21 +30,17 @@ public class OAuth2LoginSuccessHandler extends SavedRequestAwareAuthenticationSu
     public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response, Authentication authentication)
             throws ServletException, IOException {
 
-        TokenDTO tokenDTO = null;
 
-        // Check if this is an OAuth2 authentication
+        TokenDTO tokenDTO = null;
         if (authentication instanceof OAuth2AuthenticationToken) {
             OAuth2AuthenticationToken oauthToken = (OAuth2AuthenticationToken) authentication;
             CustomOAuth2User oAuth2User = (CustomOAuth2User) oauthToken.getPrincipal();
             User user = oAuth2User.getUser();
 
-            // Create a token for this user
             Authentication userAuthentication = UsernamePasswordAuthenticationToken.authenticated(
-                    user, "", Collections.emptyList()
-            );
+                    user, "", Collections.emptyList());
             tokenDTO = tokenGenerator.createToken(userAuthentication);
 
-            // Set tokens and user info in cookies
             addCookie(response, "access_token", tokenDTO.getAccessToken(), 86400);      // 1 day
             addCookie(response, "refresh_token", tokenDTO.getRefreshToken(), 2592000); // 30 days
             addCookie(response, "user_id", tokenDTO.getUserId(), 2592000);             // 30 days
