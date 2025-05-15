@@ -1,0 +1,139 @@
+
+.learning-dashboard {
+    background-color: #202020;
+    color: white;
+    padding: 20px;
+    min-height: 100vh;
+  }
+  
+  .dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+  
+  .dashboard-header h2 {
+    color: white;
+  }
+  
+  .learning-tabs .ant-tabs-tab {
+    color: #fff !important;
+  }
+  
+  .learning-tabs .ant-tabs-tab-active {
+    color: #ff4500 !important;
+  }
+  
+  .learning-tabs .ant-tabs-ink-bar {
+    background-color: #ff4500;
+  }
+  
+  .learning-tabs .ant-tabs-tab-btn:hover {
+    color: #ff6a33 !important;
+  }
+  
+  .stats-section .ant-card {
+    background-color: #2a2a2a !important;
+    border: none;
+  }
+  
+  .stats-section .ant-statistic-title {
+    color: #ccc;
+  }
+  
+  .stats-section .ant-statistic-content {
+    color: #fff;
+  }
+  
+  .learning-grid {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+  
+  .learning-card {
+    background-color: #2a2a2a !important;
+    border: 1px solid #333;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .learning-card:hover {
+    border-color: #ff4500;
+  }
+  
+  .learning-card-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .template-icon svg {
+    font-size: 18px;
+    color: inherit;
+  }
+  
+  .template-tag {
+    font-weight: 600;
+    color: #ff6a33;
+    margin-bottom: 4px;
+  }
+  
+  .description {
+    color: #ccc;
+    min-height: 60px;
+  }
+  
+  .timestamp {
+    font-size: 12px;
+    color: #888;
+  }
+  
+  .card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+  }
+  
+  .card-footer .ant-btn-link {
+    color: #ff4500;
+    padding: 0;
+  }
+  
+  .ant-modal-content {
+    background-color: #202020 !important;
+    color: white;
+  }
+  
+  .ant-modal-header {
+    background-color: #202020 !important;
+    border-bottom: 1px solid #333;
+  }
+  
+  .ant-modal-title {
+    color: white !important;
+  }
+  
+  .ant-btn-primary {
+    background-color: #ff4500;
+    border-color: #ff4500;
+  }
+  
+  .ant-btn-primary:hover {
+    background-color: #ff6a33;
+    border-color: #ff6a33;
+  }
+  
+  .loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  
