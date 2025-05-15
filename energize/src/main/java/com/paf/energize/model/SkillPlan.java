@@ -17,5 +17,5 @@ public class SkillPlan {
     private String skillLevel;
     private String resources;
     private String date;
-    private boolean isFinished;
+    //private boolean isFinished;
 }
